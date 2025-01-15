@@ -8,10 +8,11 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 
 // Print out the concatenated string
 
+console.log(tongueTwister);
 
 
 
@@ -22,10 +23,12 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
+let part1Letters = part1.slice(0,3);
+let part2Letters = part2.slice(0,5);
+let result = `${part1Letters}${part1[3].toUpperCase()}${part2Letters}${part2[5].toUpperCase()}`
 
 // Print the cameLtaiL-formatted string
-
+console.log(result);
 
 
 
@@ -36,9 +39,11 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+let percentage = 15/100;
+let tipAmount = billTotal * percentage;
 
 // Print out the tipAmount
-
+console.log(tipAmount);
 
 
 
